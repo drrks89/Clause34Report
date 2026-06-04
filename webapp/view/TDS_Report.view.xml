@@ -1,0 +1,72 @@
+<mvc:View controllerName="com.tdsrep.tdsexpensereport.controller.TDS_Report"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:smartTable="sap.ui.comp.smarttable"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+
+    <Page id="page">
+        <content>
+
+            <smartFilterBar:SmartFilterBar
+                id="smartFilterBar"
+                entitySet="ZC_GL_DUMP"
+                useDateRangeType="true"
+                showClearOnFB="true"
+                showFilterConfiguration="true">
+
+                <smartFilterBar:controlConfiguration>
+
+                    <smartFilterBar:ControlConfiguration
+                        key="CompanyCode"
+                        label="Company Code"
+                        historyEnabled="true" 
+                        visibleInAdvancedArea="true" />
+                    
+                    <smartFilterBar:ControlConfiguration
+                        key="FiscalYear"
+                        label="Fiscal Year"
+                        historyEnabled="true"
+                        mandatory="mandatory"
+                        visibleInAdvancedArea="true" />
+
+                    <smartFilterBar:ControlConfiguration
+                        key="GLAccount"
+                        label="GL Account"
+                        historyEnabled="true"
+                        visibleInAdvancedArea="true" />
+
+                    <smartFilterBar:ControlConfiguration
+                        key="DocumentNo"
+                        label="Document No"
+                        historyEnabled="true"
+                        visibleInAdvancedArea="true" />
+
+                    <smartFilterBar:ControlConfiguration
+                        key="PostingDate"
+                        label="Posting Date"
+                        historyEnabled="true"
+                        visibleInAdvancedArea="true" />
+
+                </smartFilterBar:controlConfiguration>
+
+            </smartFilterBar:SmartFilterBar>
+
+            <smartTable:SmartTable
+                id="smartTable"
+                entitySet="ZC_GL_DUMP"
+                smartFilterId="smartFilterBar"
+                tableType="Table"
+                useVariantManagement="false"
+                useTablePersonalisation="true"
+                initialise="onSmartTableInit"
+                enableExport="true"
+                header="Clause 34 Report"
+                showRowCount="true"
+                initiallyVisibleFields="CompanyCode,DocumentNo,GLAccount,DocumentType,DocumentDate,PostingDate,BusinessArea,Reference,Assignment,AmountLC,CostCenter,OrderNo,ReferenceKey3,PurchasingDocument,Item,InvoiceNo,InvoiceYear,Supplier,SupplierName,WT_BaseAmount,WithholdingTax,WithholdingTaxType,WithholdingTaxCode">
+
+            </smartTable:SmartTable>
+
+        </content>
+    </Page>
+
+</mvc:View>
