@@ -16,10 +16,9 @@ sap.ui.define([
             if (!oBindingParams.parameters) {
                 oBindingParams.parameters = {};
             }
-            // Enforces page constraints on the batch execution request payloads
             oBindingParams.parameters["$top"] = 50;
         },
-        
+      
         onSmartTableInit: function () {
             var oTable = this.byId("smartTable").getTable();
 
@@ -45,6 +44,5 @@ sap.ui.define([
             if (aCols[23]) aCols[23].setWidth("10rem"); // WT_Taxcode
         }
 
-       
     });
 });

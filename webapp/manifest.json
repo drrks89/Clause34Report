@@ -37,10 +37,10 @@
     },
     "crossNavigation": {
       "inbounds": {
-        "ZCLAUSE34-display": {
-          "semanticObject": "ZCLAUSE34",
+        "ZTDSREPORT-display": {
+          "semanticObject": "ZTDSREPORT",
           "action": "display",
-          "title": "{{ZCLAUSE34-display.flpTitle}}",
+          "title": "{{ZTDSREPORT-display.flpTitle}}",
           "signature": {
             "parameters": {},
             "additionalParameters": "allowed"
