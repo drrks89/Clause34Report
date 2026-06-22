@@ -62,7 +62,7 @@
                 enableExport="true"
                 header="Clause 34 Report"
                 showRowCount="true"
-                initiallyVisibleFields="CompanyCode,DocumentNo,GLAccount,DocumentType,DocumentDate,PostingDate,BusinessArea,Reference,Assignment,AmountLC,CostCenter,OrderNo,ReferenceKey3,PurchasingDocument,Item,InvoiceNo,InvoiceYear,Supplier,SupplierName,WT_BaseAmount,WithholdingTax,WithholdingTaxType,WithholdingTaxCode">
+                initiallyVisibleFields="CompanyCode,DocumentNo,GLAccount,DocumentType,DocumentDate,PostingDate,BusinessArea,Reference,Assignment,AmountLC,CostCenter,OrderNo,ReferenceKey,PurchasingDocument,Item,InvoiceNo,InvoiceYear,Supplier,SupplierName,WT_BaseAmount,WithholdingTax,WithholdingTaxType,WithholdingTaxCode">
 
             </smartTable:SmartTable>
 
